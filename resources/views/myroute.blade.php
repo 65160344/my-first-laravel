@@ -1,12 +1,25 @@
-<html>
+use Illuminate\Support\Facades\Route;
 
-<head>
-    <meta charset="utf-8">
-</head>
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+use Illuminate\Http\Request;
 
-<body>
-    <h1>My Route Page </h1>
-    <h1> {{ $myinput }} </h1>
-</body>
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/myD', function () {
+    return view('FolderExam.FileinFolder');
+});
 
-</html>
+Route::post('/myD', function(Request $req){
+    $data['myinput'] = $req->input('myinput'); 
+    return view('myD', $data);
+});
