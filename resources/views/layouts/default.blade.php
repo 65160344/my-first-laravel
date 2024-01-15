@@ -34,7 +34,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a href="index3.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">Form</a>
                 </li>
             </ul>
 
@@ -181,11 +181,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{ url('assets/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2"
+                        <img src="{{ url('assets/dist/img/https://stickerly.pstatic.net/sticker_pack/lHK3MuzMH84LZw6j31Wgag/T40F61/16/-1083479783.png') }}" class="img-circle elevation-2"
                             alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">Palasin Pinijaksorn</a>
                     </div>
                 </div>
 

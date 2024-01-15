@@ -1,7 +1,7 @@
 @extends('layouts.default')
- 
+
 @section('title', 'Titles')
- 
+
 @section('content')
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -19,7 +19,7 @@
         </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
- 
+
     <!-- Main content -->
     <div class="content">
         <div class="container-fluid">
@@ -55,7 +55,7 @@
                                 </div>
                             </div>
                             <!-- /.card-body -->
- 
+
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-success">บันทึก</button>
                             </div>
@@ -93,6 +93,11 @@
                                         <td>
                                             <a href="{{ url('/titles/' . $title->tit_id) }}"
                                                 class="btn btn-warning">แก้ไข</a>
+                                            <form method="post" action="/titles/{{ $title->tit_id }}">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger">ลบ</button>
+                                            </form>
                                         </td>
                                     </tr>
                                     <?php } ?>
