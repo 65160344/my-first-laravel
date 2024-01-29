@@ -15,7 +15,17 @@ use App\Http\Controllers\C_titles;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/login',[MyAuth::class, 'login_view']);
+Route::get('/register',[MyAuth::class, 'register_view']);
+Route::get('/logout',[MyAuth::class, 'logout_process']);
+Route::post('/login',[MyAuth::class, 'login_process']);
+Route::post('/register',[MyAuth::class, 'register_process']);
+
 Route::resource('titles',C_titles::class);
+Route::middleware('auth')->group(function(){
+    //auth first
+});
 
 Route::get('/my-controller',[MyController::class, 'index']);
 
