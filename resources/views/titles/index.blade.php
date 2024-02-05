@@ -11,9 +11,15 @@
                     <h1 class="m-0">SE CAMP</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
+                    <ol class="breadcrumb float-sm-mid">
                         <li class="breadcrumb-item"><a href="#">Titles</a></li>
                     </ol>
+
+                    <ol class="breadcrumb float-sm-right">
+                        <button onclick="location.href='/logout'"  type="submit" class="btn btn-danger">logout</button>    
+                    </ol>
+                       
+
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
