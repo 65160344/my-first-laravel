@@ -28,6 +28,8 @@ Route::resource('titles', C_titles::class)->middleware('auth');
 Route::middleware('auth')->group(function(){
     // auth first
 });
+Route::middleware(['PreventBackHistory','OtherMiddlewareClasses'])->group(function () {});
+
 Route::get('/my-controller', [MyController::class, 'index']);
 
 Route::get('/my-controller2', 'App\Http\Controllers\MyController@index');
